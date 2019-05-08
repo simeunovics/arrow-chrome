@@ -1,0 +1,20 @@
+{
+  "name": "Arrow",
+  "description" : "Informs you if link will open in new tab.",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "src/info_box.html",
+    "default_icon": "src/icon.png"
+  },
+  "content_scripts": [{
+    "css": ["src/style.css"],
+    "matches": ["*://*/*"]
+  }],
+  "icons": {
+    "16": "src/icon.png",
+    "32": "src/icon.png",
+    "48": "src/icon.png",
+    "128": "src/icon.png"
+  }
+}
